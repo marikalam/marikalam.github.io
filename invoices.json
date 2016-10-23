@@ -1,1 +1,0 @@
-{"invoices": [{"Status": "Unpaid", "Vendor": "Cats Inc.", "Service": "Cat Grooming", "DueDate": "2016-10-27", "Phone": 6501234567, "Amount": "50.00", "Email": "cat@cat.com"}, {"Status": "Unpaid", "Vendor": "Cats Inc.", "Service": "Cat Nail Clipping", "DueDate": "2016-10-29", "Phone": "6501234567", "Amount": "50.00", "Email": "cat@cat.com"}]}
