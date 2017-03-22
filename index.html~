@@ -7,24 +7,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-  <script>
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(["init", {
-      appId: "YOUR_APP_ID",
-      autoRegister: false, /* Set to true to automatically prompt visitors */
-      subdomainName: 'SUBDOMAIN_NAME_SEE_STEP_1.4',
-      /*
-      subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/f6hqN
-      */
-      httpPermissionRequest: {
-        enable: true
-      },
-      notifyButton: {
-          enable: true /* Set to false to hide */
-      }
-    }]);
-  </script>
 <title>Marika Lee</title> 
 <link rel="icon" href="images/panda.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
