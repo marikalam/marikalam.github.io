@@ -486,7 +486,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Mountain+View,+CA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" allowfullscreen></iframe>
 							</div>
 							<div class="col-md-6 contact-right">
-								<form action="mailto:marikaleelam@gmail.com" method="post" enctype="text/plain">
+								<p class="contact-intro">I'm open to new projects, freelance work and collaborations. Have an idea or need a hand building something? Send me a message below or email me directly at <a href="mailto:marikaleelam@gmail.com">marikaleelam@gmail.com</a>.</p>
+								<form id="contact-form" action="https://formsubmit.co/marikaleelam@gmail.com" method="POST">
+									<input type="hidden" name="_captcha" value="false">
+									<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 									<div class="styled-input agile-styled-input-top">
 										<input type="text" name="Name" required="">
 										<label>Name</label>
@@ -508,6 +511,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<span></span>
 									</div>	 
 									<input type="submit" value="SEND">
+									<p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
 								</form>
 							</div>
 							<div class="clearfix"> </div>
@@ -534,5 +538,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
+	<script>
+	// Send the contact form via FormSubmit; if that fails, fall back to
+	// opening the visitor's mail app with the message pre-filled.
+	$(function () {
+		var $form = $('#contact-form');
+		var $status = $('#contact-status');
+		var $submit = $form.find('input[type="submit"]');
+		$form.on('submit', function (e) {
+			e.preventDefault();
+			if ($form.find('input[name="_honey"]').val()) return;
+			var name = $form.find('[name="Name"]').val();
+			var email = $form.find('[name="Email"]').val();
+			var subject = $form.find('[name="Subject"]').val();
+			var message = $form.find('[name="Message"]').val();
+			$submit.prop('disabled', true).val('SENDING...');
+			$status.text('');
+			$.ajax({
+				url: 'https://formsubmit.co/ajax/marikaleelam@gmail.com',
+				method: 'POST',
+				dataType: 'json',
+				data: { name: name, email: email, _replyto: email, _subject: 'Website contact: ' + subject, message: message }
+			}).done(function (res) {
+				if (res && (res.success === true || res.success === 'true')) {
+					$status.text('Thanks! Your message has been sent. I\'ll get back to you soon.');
+					$form[0].reset();
+				} else {
+					fallback();
+				}
+			}).fail(fallback).always(function () {
+				$submit.prop('disabled', false).val('SEND');
+			});
+			function fallback() {
+				$status.text('Opening your email app to send the message...');
+				window.location.href = 'mailto:marikaleelam@gmail.com'
+					+ '?subject=' + encodeURIComponent(subject)
+					+ '&body=' + encodeURIComponent(message + '\n\n' + name + ' (' + email + ')');
+			}
+		});
+	});
+	</script>
 </body>
 </html>

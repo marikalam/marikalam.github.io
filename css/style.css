@@ -937,3 +937,19 @@ p.agile-br {
 
 }
 /*-- //responsive-design --*/
+/*-- contact intro & status --*/
+.contact-intro {
+	font-size: 1em;
+	line-height: 1.7em;
+	color: #fff;
+	margin-bottom: 1.5em;
+}
+.contact-intro a {
+	color: #1dadd3;
+	overflow-wrap: break-word;
+}
+.contact-status {
+	margin-top: 1em;
+	font-size: 0.95em;
+	color: #fff;
+}
