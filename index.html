@@ -61,7 +61,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul class="nav navbar"> 
 						<li><a href="index.html" class="w3ls-hover"><span data-letters="Home">Home</span></a></li>
-						<li><a href="https://marikalam.github.io/apps/" class="w3ls-hover"><span data-letters="Apps">Apps</span></a></li>
 						<li><a href="#" data-toggle="modal" data-target="#about" class="w3ls-hover"><span data-letters="About">About </span></a></li>
 						<li><a href="#" data-toggle="modal" data-target="#skill" class="w3ls-hover"><span data-letters="Skills">Skills</span></a></li>
 						<li><a href="#" data-toggle="modal" data-target="#experience" class="w3ls-hover"><span data-letters="Experience">Experience </span></a></li>
@@ -361,111 +360,421 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- modal-projects -->
 	<div class="modal fade modal-experience" id="work" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content"> 
+			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title">My Projects</h4>
 				</div>
 				<div class="modal-body modal-spa">
-					<div class="experience w3-agileits-info">  
-						<div class="experience-grids experience-grids-btm">
+					<div class="experience projects">
+						<h2 class="project-section">Apps</h2>
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Oct 2016</h3>
-								<h5>Vegas Money2020 Hackathon</h5>
+								<span class="project-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+									<defs>
+									<linearGradient id="hd-bg" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#c47d4b"/>
+									<stop offset="1" stop-color="#8f5330"/>
+									</linearGradient>
+									</defs>
+									<rect width="512" height="512" fill="url(#hd-bg)"/>
+									<path d="M146 240v140a24 24 0 0 0 24 24h172a24 24 0 0 0 24-24V240L256 140z" fill="#fff8ee"/>
+									<path d="M116 262L256 134l140 128" fill="none" stroke="#fff8ee" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+									<g stroke="#c9a88c" stroke-width="14" stroke-linecap="round">
+									<path d="M186 290h96M186 330h96M186 370h64"/>
+									</g>
+									<path d="M306 232h36v108l-18-16-18 16z" fill="#b5453a"/>
+									</svg>
+								</span>
+								<h3>HomeDiary</h3>
+								<h5>Full-stack web app</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href = "https://github.com/marikaklee/moneyz">PowerPay</a></h4>
-								<p>Credit cards costs 2.9% and paying online directly using bank account doesn't work because there is no real-time verification of payment. So, we created a website that authenticates the payer and make the payment using a digital checks from their bank account using Flask Framework, Python, HTML/CSS/Javascript, Heroku.and Feedzai API.<br>
-								<a href = "https://github.com/marikaklee/piggybank">Project page</a>
-								</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="experience-grids">
-							<div class="experience-left">
-								<h3>Sept 2016</h3>
-								<h5>US Bank/Mastercard Small Business Hackathon Finalists</h5>
-							</div>
-							<div class="experience-right">
-								<h4><a href = "https://github.com/marikaklee/piggybank">4Sight</a></h4>
+								<h4><a href="https://homediary.onrender.com" target="_blank" rel="noopener noreferrer">Track your home's history and documents</a></h4>
 								<p>
-									4Sight is web application that creates an adaptive cashflow forecasting tool for small business to better manage working capital using Flask Framework, Python and HTML/CSS/Javascript.<br>
-									<a href = "https://github.com/marikaklee/piggybank">Project page</a>
+									HomeDiary is a private diary for your home. Sign in, add your properties, and log a timeline of
+									everything that happens to them: purchase, damage, repairs, inspections, and more, each with photos
+									and documents attached. Paperwork like purchase documents, insurance policies, and warranties gets
+									its own place for each property, and every account only ever sees its own homes. The app has a
+									typed REST API with JWT cookie auth and bcrypt password hashing, and uploads go straight to
+									S3-compatible object storage. It runs as a single Docker service on Render.
 								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>TypeScript</li>
+										<li>React</li>
+										<li>React Router</li>
+										<li>Vite</li>
+										<li>Node.js</li>
+										<li>Express</li>
+										<li>Prisma</li>
+										<li>PostgreSQL (Neon)</li>
+										<li>Cloudflare R2 (S3 API)</li>
+										<li>JWT auth</li>
+										<li>Docker</li>
+										<li>Render</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://homediary.onrender.com" target="_blank" rel="noopener noreferrer">Open app</a>
+									<a href="https://github.com/marikalam/HomeDiary" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
-						</div> 
-						<div class="experience-grids experience-grids-btm">
+						</div>
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Jul 2016</h3>
-								<h5>One Traction AR/VR Hackathon Finalists</h5>
+								<span class="project-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+									<defs>
+									<linearGradient id="kq-bg" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#e98a2e"/>
+									<stop offset="1" stop-color="#d6473c"/>
+									</linearGradient>
+									</defs>
+									<rect width="512" height="512" fill="url(#kq-bg)"/>
+									<g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="30">
+									<path d="M112 186v-46a28 28 0 0 1 28-28h46"/>
+									<path d="M326 112h46a28 28 0 0 1 28 28v46"/>
+									<path d="M400 326v46a28 28 0 0 1-28 28h-46"/>
+									<path d="M186 400h-46a28 28 0 0 1-28-28v-46"/>
+									<path d="M206 214a50 50 0 1 1 78 42c-18 12-28 22-28 44v6" stroke-width="36"/>
+									</g>
+									<circle cx="256" cy="362" r="23" fill="#fff"/>
+									<path d="M346 166l7 17 17 7-17 7-7 17-7-17-17-7 17-7z" fill="#ffe08a"/>
+									</svg>
+								</span>
+								<h3>Kachun Quizer</h3>
+								<h5>AI study app</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href = "https://github.com/marikaklee/tolen">Tolen</a></h4>
-								<p>Tolen is an an augmented reality online review market. Our solution is to create basically a Virtual Reality Yelp along with the environement view and the menu's associated with their dishes. Tolen offers <br>
-								1. A clickable menu of the restaurant to view dishes as holograms. <br>
-								2. 360 degrees video of the restaurant. <br>
-								3. For restaurants to showcase their dishes as holograms to the customers before they order their food.<br>
-								Therefore restaurants and users can give better impressions of their best-rated dishes.<br>
-								<a href = "https://github.com/marikaklee/tolen">Project page</a>
+								<h4><a href="https://marikalam.github.io/apps/kachun-quizer/">Photo your notes, get quizzed on them</a></h4>
+								<p>
+									Take a photo of your notes or paste them in, and Kachun Quizer turns them into an Anki-style
+									flashcard deck. Tesseract.js reads the text out of the photo in the browser. Claude then writes
+									real comprehension questions from it, through a Cloudflare Worker that keeps the API key off the
+									client. If that request fails, the app falls back to an offline generator that uses NLP to blank out
+									the key word in each sentence, so a study session never hits a dead end. Each deck uses spaced
+									repetition: facts you miss come back sooner, and facts you know show up less often.
 								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>JavaScript</li>
+										<li>React</li>
+										<li>Vite</li>
+										<li>Claude API</li>
+										<li>Cloudflare Workers</li>
+										<li>Tesseract.js (OCR)</li>
+										<li>Compromise (NLP)</li>
+										<li>Spaced repetition</li>
+										<li>PWA</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://marikalam.github.io/apps/kachun-quizer/">Open app</a>
+									<a href="https://github.com/marikalam/kachun-quizer">Source on GitHub</a>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
 						</div>
-						<div class="experience-grids experience-grids-btm">
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Sept 2016</h3>
-								<h5>Rakuten Hackathon Finalists</h5>
+								<span class="project-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+									<defs>
+									<linearGradient id="mp-bg" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#38c07f"/>
+									<stop offset="1" stop-color="#4a7cf5"/>
+									</linearGradient>
+									</defs>
+									<rect width="512" height="512" fill="url(#mp-bg)"/>
+									<g stroke-linecap="round" stroke-width="28">
+									<rect x="118" y="118" width="128" height="128" rx="34" fill="#fff"/>
+									<rect x="266" y="118" width="128" height="128" rx="34" fill="#fff"/>
+									<rect x="118" y="266" width="128" height="128" rx="34" fill="#ffd23f"/>
+									<rect x="266" y="266" width="128" height="128" rx="34" fill="#fff"/>
+									<path d="M182 146v72M146 182h72" stroke="#38c07f"/>
+									<path d="M294 182h72" stroke="#3f9bc0"/>
+									<path d="M157 305l50 50M207 305l-50 50" stroke="#171a2b"/>
+									<path d="M294 330h72" stroke="#4a7cf5"/>
+									</g>
+									<circle cx="330" cy="298" r="14" fill="#4a7cf5"/>
+									<circle cx="330" cy="362" r="14" fill="#4a7cf5"/>
+									</svg>
+								</span>
+								<h3>MathPop</h3>
+								<h5>Math game for kids</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href = "https://github.com/marikaklee/roomz">Roomz</a></h4>
-								<p>Roomz is an iOS app that checks availability, books and cancels meeting rooms in the office. The primary tools used for this product is XCode IDE, Swift and the Microsoft Outlook API.<br>
-								<a href = "https://github.com/marikaklee/roomz">Project page</a>
+								<h4><a href="https://marikalam.github.io/apps/mathpop/">Multiplication, addition, subtraction</a></h4>
+								<p>
+									MathPop is a sibling to PitchPop that uses arithmetic instead of chords. Kids pick multiplication,
+									addition, subtraction, or a random mix, then solve five-problem rounds with big colored cards,
+									chimes, and confetti. They can tap an answer or write it by hand: a small neural network I trained
+									on MNIST, with augmentation to handle messy kid handwriting, reads the digits right in the browser.
+									The wrong answer choices come from common slip-ups, like being off by one factor or adding instead
+									of multiplying, so getting it right means knowing the answer. Problems are read aloud with Piper
+									TTS, and progress is saved on the device and broken down by operation.
 								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>JavaScript</li>
+										<li>React</li>
+										<li>Vite</li>
+										<li>Neural network (MNIST)</li>
+										<li>Canvas API</li>
+										<li>Piper TTS</li>
+										<li>PWA</li>
+										<li>GitHub Pages</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://marikalam.github.io/apps/mathpop/">Open app</a>
+									<a href="https://github.com/marikalam/mathpop">Source on GitHub</a>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
 						</div>
-						<div class="experience-grids experience-grids-btm">
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Sept 2016</h3>
+								<span class="project-icon"><span class="project-emoji">🎵</span></span>
+								<h3>PitchPop</h3>
+								<h5>Music game for kids</h5>
+							</div>
+							<div class="experience-right">
+								<h4><a href="https://marikalam.github.io/apps/pitchpop/">Learn perfect pitch by colored chords</a></h4>
+								<p>
+									PitchPop started as a game we play at home: I play a chord on the piano, and my kids grab the
+									matching color flag and shout it out. The app turns that into a quiz. Tap the rainbow to hear one of
+									nine chords, pick its color from four choices, and get confetti and spoken feedback when you're
+									right. The piano sound is synthesized from harmonics with the Web Audio API, so the app ships no
+									audio samples. The voice is Piper, a neural text-to-speech model that runs in the browser through
+									ONNX Runtime. There's also a free-play mode, plus a progress page for each child that tracks
+									accuracy and which colors have come up. It installs to a phone's home screen as a PWA.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>JavaScript</li>
+										<li>React</li>
+										<li>Vite</li>
+										<li>Web Audio API</li>
+										<li>Piper TTS</li>
+										<li>ONNX Runtime Web</li>
+										<li>PWA</li>
+										<li>GitHub Pages</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://marikalam.github.io/apps/pitchpop/">Open app</a>
+									<a href="https://github.com/marikalam/pitchpop">Source on GitHub</a>
+								</div>
+							</div>
+						</div>
+						<h2 class="project-section">Earlier projects</h2>
+						<div class="experience-grids project-grids">
+							<div class="experience-left">
+								<span class="project-icon"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span></span>
+								<h3>PowerPay</h3>
+								<h5>Money20/20 Hackathon, Las Vegas</h5>
+							</div>
+							<div class="experience-right">
+								<h4><a href="https://github.com/marikalam/moneyz">Pay online by digital check</a></h4>
+								<p>
+									Card payments cost merchants about 2.9% per transaction, and paying straight from a bank account
+									online usually fails because there's no real-time check that the payment is good. PowerPay
+									authenticates the payer and pays with a digital check drawn on their bank account, using the Feedzai
+									API to score each payment for fraud before it goes through. I built the web app in Flask and deployed
+									it on Heroku.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Python</li>
+										<li>Flask</li>
+										<li>JavaScript</li>
+										<li>HTML/CSS</li>
+										<li>Feedzai API</li>
+										<li>Heroku</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://github.com/marikalam/moneyz">Source on GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="experience-grids project-grids">
+							<div class="experience-left">
+								<span class="project-icon"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span></span>
+								<h3>4Sight</h3>
+								<h5>US Bank / Mastercard Hackathon finalist</h5>
+							</div>
+							<div class="experience-right">
+								<h4><a href="https://github.com/marikalam/piggybank">Cash-flow forecasting for small businesses</a></h4>
+								<p>
+									4Sight helps small businesses manage working capital by forecasting cash flow by day, week, or month.
+									It starts from a worst-case projection that assumes every customer pays on the last possible due
+									date, then updates in real time by checking the business's bank account through the US Bank API,
+									so invoices that are paid early move the forecast right away.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Python</li>
+										<li>Flask</li>
+										<li>JavaScript</li>
+										<li>HTML/CSS</li>
+										<li>US Bank API</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://github.com/marikalam/piggybank">Source on GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="experience-grids project-grids">
+							<div class="experience-left">
+								<span class="project-icon"><span class="glyphicon glyphicon-plane" aria-hidden="true"></span></span>
+								<h3>Changi Along The Way</h3>
 								<h5>Changi Airport Hackathon</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href = "https://github.com/marikaklee/changi">Changi Along The Way</a></h4>
-								<p>Changi Along The Way a website that allows passengers to be able to accurately predict amount of time it takes to get to your destination, along with personalized list of places along the way to your gate.<br>
-								<a href = "https://github.com/marikaklee/changi">Project page</a>
+								<h4><a href="https://github.com/marikalam/changi">A journey companion to your gate</a></h4>
+								<p>
+									At Changi Airport, 60% of passengers arrive less than two hours before their flight, and even early
+									travelers worry about missing it. Changi Along The Way predicts how long it will take to get to your
+									gate and suggests a personalized list of places to stop along the way, so you can relax without
+									losing track of time.
 								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Python</li>
+										<li>Flask</li>
+										<li>JavaScript</li>
+										<li>jQuery</li>
+										<li>Sass</li>
+										<li>Gulp</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://github.com/marikalam/changi">Source on GitHub</a>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
 						</div>
-
-						<div class="experience-grids experience-grids-btm">
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Dec 2014</h3>
+								<span class="project-icon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+								<h3>Roomz</h3>
+								<h5>Rakuten Hackathon finalist</h5>
+							</div>
+							<div class="experience-right">
+								<h4><a href="https://github.com/marikalam/roomz">Book meeting rooms from your phone</a></h4>
+								<p>
+									Roomz is an iOS app for checking, booking, and canceling meeting rooms at Rakuten's Tokyo office.
+									It shows room availability in real time through the Microsoft Office 365 Outlook API, so people
+									could grab a free room on the spot and the company didn't need to pay for a third-party booking
+									tool.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Swift</li>
+										<li>iOS</li>
+										<li>Xcode</li>
+										<li>Office 365 Outlook API</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://github.com/marikalam/roomz">Source on GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="experience-grids project-grids">
+							<div class="experience-left">
+								<span class="project-icon"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></span>
+								<h3>Tolen</h3>
+								<h5>One Traction AR/VR Hackathon finalist</h5>
+							</div>
+							<div class="experience-right">
+								<h4><a href="https://github.com/marikalam/Tolen">An augmented reality restaurant review market</a></h4>
+								<p>
+									Photos on review sites only show part of a restaurant, and you can't tell how big a dish really is.
+									Tolen lets you experience a restaurant before you go: browse a clickable menu that shows each dish as
+									a hologram, and look around the dining room in a 360-degree video. Restaurants can show off their
+									best-rated dishes, and diners know what to expect.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Swift</li>
+										<li>iOS</li>
+										<li>Augmented reality</li>
+										<li>360° video</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="https://github.com/marikalam/Tolen">Source on GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="experience-grids project-grids">
+							<div class="experience-left">
+								<span class="project-icon"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></span>
+								<h3>BUSale</h3>
 								<h5>Boston University</h5>
 							</div>
 							<div class="experience-right">
-								<h4>BUSale</h4>
-								<p>BUsale is a free college marketplace that allows any Instagram user to sell a second hand item or service by using the hashtag "busale" in the caption of an Instagram post. Users can conveniently sell items via their Instagram account and buy items via our website. This project incorporates external use of the Instagram API, MySQL, and MVC web app implementation in PHP.<br>
-							</p>
+								<h4>A college marketplace built on Instagram</h4>
+								<p>
+									BUSale is a free marketplace for college students. Anyone can sell a used item or a service by
+									posting it on Instagram with #busale in the caption, and buyers browse and buy those listings on the
+									BUSale website. It pulls posts through the Instagram API into an MVC web app written in PHP with a
+									MySQL database.
+								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>PHP</li>
+										<li>MySQL</li>
+										<li>MVC</li>
+										<li>Instagram API</li>
+									</ul>
+								</div>
 							</div>
-						<div class="clearfix"> </div>
-					</div>
-						<div class="experience-grids experience-grids-btm">
+						</div>
+						<div class="experience-grids project-grids">
 							<div class="experience-left">
-								<h3>Aug 2014</h3>
-								<h5>Boston University Medical School</h5>
+								<span class="project-icon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></span>
+								<h3>Finding Information Framework</h3>
+								<h5>Boston University School of Medicine</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href = "http://www.bumc.bu.edu/busm/2013/11/05/introducing-busms-finding-information-framework-fif-conceptual-algorithm-practical-web-based-tool/">Boston University Finding Information Framework</a></h4>
-								<p>FIF is the first iOS app created for the Boston University School of Medicine. It is a medical education app to help reinforce skills to uncover resources related to Evidence Based Medicine. Tools used include Objective C, Balsamiq Wireframing Tool, XCode IDE, Github, TestFlight Beta Testing. The iOS app (search BUSM Finding Information Framework) is available in the App store!<br>
-								<a href = "http://www.bumc.bu.edu/busm/2013/11/05/introducing-busms-finding-information-framework-fif-conceptual-algorithm-practical-web-based-tool/">Product page</a>
+								<h4><a href="http://www.bumc.bu.edu/busm/2013/11/05/introducing-busms-finding-information-framework-fif-conceptual-algorithm-practical-web-based-tool/" target="_blank" rel="noopener noreferrer">Evidence-based medicine, on iOS</a></h4>
+								<p>
+									FIF was the first iOS app built for the Boston University School of Medicine. It's a medical
+									education app that helps students practice finding the resources behind evidence-based medicine. I
+									designed it with Balsamiq wireframes, built it in Objective-C, beta tested it through TestFlight, and
+									shipped it to the App Store.
 								</p>
+								<div class="project-stack">
+									<span>Tech stack</span>
+									<ul>
+										<li>Objective-C</li>
+										<li>iOS</li>
+										<li>Xcode</li>
+										<li>Balsamiq</li>
+										<li>TestFlight</li>
+									</ul>
+								</div>
+								<div class="project-links">
+									<a class="primary" href="http://www.bumc.bu.edu/busm/2013/11/05/introducing-busms-finding-information-framework-fif-conceptual-algorithm-practical-web-based-tool/" target="_blank" rel="noopener noreferrer">Product page</a>
+								</div>
 							</div>
-							<div class="clearfix"> </div>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</div>
 	</div>
@@ -534,5 +843,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
+    <script>
+      // marikalam.github.io/#projects opens the Projects list directly
+      if (location.hash === '#projects') {
+        $('#work').modal('show');
+      }
+    </script>
 </body>
 </html>
