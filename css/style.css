@@ -953,3 +953,67 @@ p.agile-br {
 	font-size: 0.95em;
 	color: #fff;
 }
+
+/*-- apps & projects --*/
+.projects-heading {
+	color: #fff;
+	font-size: 1.4em;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-left: 4px solid #ec407a;
+	padding-left: 0.6em;
+	margin: 0 0 1em;
+}
+.app-grid + .projects-heading {
+	margin-top: 2.5em;
+}
+.app-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1em;
+}
+.app-card {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	padding: 1em;
+	border: 1px solid #ec407a;
+	background: rgba(0, 0, 0, 0.35);
+	text-decoration: none;
+	transition: background 0.2s ease;
+}
+.app-card:hover,
+.app-card:focus {
+	background: rgba(236, 64, 122, 0.18);
+	text-decoration: none;
+}
+.app-card-icon {
+	flex: none;
+	width: 56px;
+	height: 56px;
+	border-radius: 14px;
+}
+.app-card-text {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+.app-card-title {
+	color: #1dadd3;
+	font-size: 1.3em;
+	font-weight: 900;
+}
+.app-card-sub {
+	color: #fff;
+	font-size: 0.9em;
+	line-height: 1.4;
+	margin-top: 0.2em;
+}
+@media(max-width:600px){
+	.app-grid {
+		grid-template-columns: 1fr;
+	}
+}
+/*-- //apps & projects --*/
