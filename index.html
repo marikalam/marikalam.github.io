@@ -320,7 +320,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h5>AI clinical workflow app</h5>
 							</div>
 							<div class="experience-right">
-								<h4><a href="https://chartpilot.onrender.com" target="_blank" rel="noopener noreferrer">Observation screening and clinical notes for hospitalists</a></h4>
+								<h4><a href="https://marikalam.github.io/apps/chartpilot/">Observation screening and clinical notes for hospitalists</a></h4>
 								<p>
 									ChartPilot takes two jobs physicians were doing by pasting text into chat windows and turns them
 									into one app. For ED observation screening, it applies a group's several-hundred-page rulebook to a
@@ -330,7 +330,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									the note in that hospital's template and the physician's own style. It then runs an evidence review
 									against guideline and journal sites, and merges the review back into a final note with every
 									addition marked for approval. The rulebook is sent as a cached prompt prefix, so repeat screenings
-									cost a fraction of the first one. The server is stateless and stores no patient data.
+									cost a fraction of the first one. A small Cloudflare Worker keeps the API key off the client, and no
+									patient data is stored anywhere.
 								</p>
 								<div class="project-stack">
 									<span>Tech stack</span>
@@ -338,19 +339,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li>TypeScript</li>
 										<li>React</li>
 										<li>Vite</li>
-										<li>Node.js</li>
-										<li>Express</li>
 										<li>Claude API</li>
 										<li>Structured outputs</li>
 										<li>Prompt caching</li>
+										<li>Cloudflare Workers</li>
 										<li>Web Speech API</li>
-										<li>Server-sent events</li>
-										<li>Docker</li>
-										<li>Render</li>
+										<li>IndexedDB</li>
+										<li>GitHub Pages</li>
 									</ul>
 								</div>
 								<div class="project-links">
-									<a class="primary" href="https://chartpilot.onrender.com" target="_blank" rel="noopener noreferrer">Open app</a>
+									<a class="primary" href="https://marikalam.github.io/apps/chartpilot/">Open app</a>
 								</div>
 							</div>
 						</div>
